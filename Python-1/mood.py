@@ -8,7 +8,7 @@ while mood != "exit":
     elif mood == "nervioso":
         print("Toma aire 3 veces!!!")
     elif mood == "excitado":
-        print("Relaja observando el amanecer")
+        print("Relajate observando el amanecer")
     elif mood == "exit":
         break
     else:
