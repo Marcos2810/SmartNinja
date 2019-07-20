@@ -1,11 +1,19 @@
-mood = input ("Como te sientes hoy? (feliz, nervioso, excitado):")
-sent = None
 
-if mood == "feliz":
-    print("Que bueno verte feliz!")
-elif mood == "nervioso":
-    print("Toma aire 3 veces!!!")
-elif mood == "excitado":
-    print("Relaja mirando el amancer")
-else:
-    print("Cheer up, mate!")
+
+mood = None
+while mood != "exit":
+    print("Escribe exit para salir")
+    mood = input("Como te sientes hoy? (feliz, nervioso, excitado):")
+    if mood == "feliz":
+        print("Que bueno verte feliz!")
+    elif mood == "nervioso":
+        print("Toma aire 3 veces!!!")
+    elif mood == "excitado":
+        print("Relaja mirando el amanecer")
+    elif mood == "exit":
+        break
+    else:
+        print("No es un sentimiento que entienda")
+
+print("A vivir!!!")
+

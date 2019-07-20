@@ -20,8 +20,7 @@ while op != "q":
     elif op == "/":
         resultado = num1 / num2
     elif op == "q":
-        print("Bye, bye!!!")
-        exit()
+        break
     else:
         print("No son datos validos!!!")
 
@@ -30,3 +29,4 @@ while op != "q":
     print("El resultado de la operacion es: ")
     print(str(num1) + " " + op + " " + str(num2) + " " + str(resultado))
     print(resultado)
+print("Bye, bye!!!")
