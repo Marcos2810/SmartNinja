@@ -48,3 +48,12 @@ print("Hello " + user_name + "!")
 first_num = int(input("Enter the first number: "))
 sec_num = int(input("Enter the first number: "))
 print(first_num + sec_num)
+
+mood = input("What is your mood today? ")
+
+if mood == "happy":
+    print("It is great to see you happy!")
+elif mood == "nervous":
+    print("Take a deep breath 3 times.")
+else:
+    print("Cheer up, mate!")
