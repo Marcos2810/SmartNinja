@@ -1,5 +1,4 @@
 
-
 mood = None
 while mood != "exit":
     print("Escribe exit para salir")
@@ -13,7 +12,7 @@ while mood != "exit":
     elif mood == "exit":
         break
     else:
-        print("No es un sentimiento que entienda")
+        print("No entiendo ese sentimiento")
 
 print("A vivir!!!")
 
