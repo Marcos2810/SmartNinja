@@ -3,7 +3,7 @@ print("\nBienvenido a la calculadora de Python\nAhora introduce los datos")
 op = None
 while op != "q":
     # recogemos datos
-    print("Escribe q para salir")
+    print("Para salir escribe q")
     op = input ("Que cuenta quieres hacer (+ - * / q):")
     if op != "q":
         num1 = float(input("Introduce primer valor: "))
