@@ -1,6 +1,6 @@
 import random
 
-secret = random.randint(0,30)
+secret = random.randint(0, 30)
 guess = None
 while True:
     guess = int(input("Introduce un numero entre 1 y 30: "))
