@@ -12,5 +12,5 @@ while True:
     elif guess < secret:
         print("Te has quedado corto intentalo otra vez")
     else:
-        print("Nop... no es intentalo otra vez ")
+        print("No hagas trampa")
 print("Has acertado... Mago!!!")
