@@ -10,4 +10,4 @@ while True:
   yes = input("Quieres repetir y/n: ")
   if yes != "y":
     break
-print("bye...")
+print("Hasta pronto!")
