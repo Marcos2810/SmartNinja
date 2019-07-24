@@ -3,7 +3,7 @@ import random
 secret = random.randint(0, 30)
 guess = None
 while True:
-    guess = int(input("Introduce un numero entre 1 y 30: "))
+    guess = int(input("Introduce un numero entre 0 y 30: "))
 
     if guess == secret:
         break
