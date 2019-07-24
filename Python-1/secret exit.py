@@ -13,7 +13,7 @@ while True:
         print("Te has quedado corto intentalo otra vez")
     else:
         print("No hagas trampa")
-    yes = input("Quieres repetir y/n: ")
+    yes = input("Quieres intentarlo de nuevo? y/n: ")
     if yes != "y":
         break
 print("Has acertado... Mago!!!")
