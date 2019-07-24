@@ -1,23 +1,19 @@
 import random
-secret = random.randint(0,30)
-mago = None
-guess = None
-while mago != "q":
-    # recogemos datos
-    print("Para salir escribe q")
-    mago = input ("Quieres empezar?: ")
-    if mago != "q":
-        guess = int(input("Introduce primer valor: "))
+
+secret = random.randint(0, 30)
+
+while True:
+    guess = int(input("Introduce un numero entre 0 y 30: "))
 
     if guess == secret:
-        print("Has acertado... Mago!!!")
-        exit()
+        break
     elif guess > secret:
         print("Te has pasado intentalo otra vez")
     elif guess < secret:
         print("Te has quedado corto intentalo otra vez")
-    elif guess == mago:
-        break
     else:
-        print("Nop... no es intentalo otra vez ")
-print("bye")
+        print("No hagas trampa")
+    yes = input("Quieres repetir y/n: ")
+    if yes != "y":
+        break
+print("Has acertado... Mago!!!")
