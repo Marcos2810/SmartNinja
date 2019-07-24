@@ -8,6 +8,6 @@ while True:
   print("Estos KM" + " " + str(km) + " " +"equivalen a" + " " + str(miles))
   
   yes = input("Quieres repetir y/n: ")
-  if yes != "y" and yes != "yes":
+  if yes != "y":
     break
 print("bye...")
