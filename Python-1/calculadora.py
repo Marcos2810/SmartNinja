@@ -23,6 +23,7 @@ while op != "q":
         break
     else:
         print("No son datos validos!!!")
+        exit()
 
 
     # mostramos resultados

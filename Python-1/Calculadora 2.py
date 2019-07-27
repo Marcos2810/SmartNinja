@@ -23,10 +23,9 @@ while op != "q":
         break
     else:
         print("No son datos validos!!!")
+        exit()
     print("El resultado de la operacion es: ")
     print(resultado)
 
-
     # mostramos resultados
-
 print("Bye, bye!!!")
