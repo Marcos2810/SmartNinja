@@ -1,0 +1,8 @@
+[{"attempts": 5, "date": "2019-07-27 14:03:28.481437", "usuario": "m", "secret": 21},
+{"attempts": 5, "date": "2019-07-27 14:04:25.752171", "usuario": "l", "secret": 26},
+{"attempts": 4, "date": "2019-07-27 14:05:15.075912", "usuario": "k", "secret": 13},
+{"attempts": 5, "date": "2019-07-27 14:06:18.839213", "usuario": "k", "secret": 4, "wrong": []},
+{"attempts": 1, "date": "2019-07-27 14:07:01.042636", "usuario": "h", "secret": 20, "wrong": []},
+{"attempts": 6, "date": "2019-07-27 14:07:54.540178", "usuario": "t", "secret": 18, "wrong": [20, 15, 17, 13, 14]},
+{"attempts": 2, "date": "2019-07-27 14:15:26.297041", "int": [1], "secret": 10, "wrong": [20]},
+{"attempts": 5, "date": "2019-07-27 14:17:03.257986", "int": [1, 2, 3, 4], "usuario": "P", "secret": 18, "wrong": [20, 10, 15, 17]}]

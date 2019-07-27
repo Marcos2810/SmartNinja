@@ -2,7 +2,7 @@ print("Nuestro primer conversor")
 print("Conversor de KM a Millas")
 
 while True:
-  km = float(input("Introduce el valor en KM: ").replace(",",".")) #antigua linea mia
+  km = float(input("Introduce el valor en KM: ").replace(",",".")) #antigua linea mia - mejorada
   #se puede definir la variable despues de pedir su valor
 
   #km = input("Introduce el valor de KM: ")convierte comas en punto
