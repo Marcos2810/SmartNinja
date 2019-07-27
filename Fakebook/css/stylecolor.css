@@ -1,0 +1,11 @@
+body {font-family: Arial; background: #80808014; text-align: center;}
+
+#red {color: red; font-weight: bold;}
+
+#blue {color: blue;}
+
+.red2 {color: red; font-size: 50px;}
+.red2:hover {color: green; font-weight:bold;}
+
+.image {border: 6px black dotted; padding: 15px; height: 100px;}
+.image:hover {border: 6px red solid; height: 100%;}

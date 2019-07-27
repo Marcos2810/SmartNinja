@@ -1,0 +1,12 @@
+* {margin: 0px auto; text-align: center;}
+body {font-family: Arial; background: #ffff0059; top: 20px;}
+nav {background: white;padding: 10px;}
+h1 {color: red; font-size: 60px;}
+h2 {font-size: 50px; color: blue; margin-top: 10px;}
+p:hover {font-weight: bold;}
+.image {margin: 10px 0 10px 0; width: 25%;}
+.image:hover {border: 6px red solid; width: 50%;}
+table {background: red; padding: 5px;}
+td {color: white; text-align: left; padding: 5px;}
+td:hover {color: black; background: white;}
+button:hover {background: blue; color: white;}
