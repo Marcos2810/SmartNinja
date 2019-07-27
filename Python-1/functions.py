@@ -17,3 +17,6 @@ def bye():
 
 def hello_name(n):
     print("Hello {0}".format(n))
+def sum(n1, n2):
+    resultado = n1 + n2
+    return resultado
