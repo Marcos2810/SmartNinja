@@ -1,16 +1,13 @@
 import functions as f
 
-f.hello_name("Marcos")
+f.hello_name("Ulises")
+f.hello()
 f.bye()
-f.sum(2,3)
+text = f.say_hello(name="Matt")
+print(text)
 
+sum2 = f.sum(5, 6)
+print(str(sum2))
 
-def numbers_sum(num1, num2):
-    result = num1 + num2
-    return result
-
-
-print(numbers_sum(5, 23))
-print(numbers_sum(1, 1))
-print(numbers_sum(225, 175))
-print(numbers_sum(5000, 23000))
+sum1 = f.sum(n1=int(input("ingrese n1: ")), n2=int(input("ingres n2: ")))
+print(str(sum1))

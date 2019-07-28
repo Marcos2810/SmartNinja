@@ -1,1 +1,1 @@
-[{"usuario": "Marcos", "intentos": 6, "fecha": "2019-07-28 11:49:11.858214", "secret": 10, "errores": 6}, {"usuario": "Diana", "intentos": 3, "fecha": "2019-07-28 11:56:54.524711", "secret": 30, "errores": [4, 25]}]
+[{"usuario": "Marcos", "intentos": 6, "fecha": "2019-07-28 11:49:11.858214", "secret": 10, "errores": 6}, {"usuario": "Diana", "intentos": 3, "fecha": "2019-07-28 11:56:54.524711", "secret": 30, "errores": [4, 25]}, {"usuario": "m", "attempts": 3, "fecha": "2019-07-28 13:13:46.560428", "secret": 28, "errores": [17, 25]}]
