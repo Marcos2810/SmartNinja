@@ -6,7 +6,9 @@ import datetime
 
 with open("score_list.txt", "r") as score_file:
     score_list = json.loads(score_file.read())#json como lee lista Python - lee en formato lista
+    print("Top" + str(score_list))
     print("Top score (attempts): " + str(score_list[:5])) #[ 5 ] cantidad de numeros que mostrara
+    print("Top score (attempts): {0}".format(score_list[:5]))  # [ 5 ] cantidad de numeros que mostrara
 
 
 secret = random.randint(1, 30)
@@ -22,20 +24,17 @@ while True:
     attempts += 1
 
     if guess == secret:
-        print("You've guessed it - congratulations! It's number " + str(secret))
-        print("Attempts needed: " + str(attempts))
-        score_data = {
-            "Usuario": nombre,
-            "Intentos": attempts,
-            "date": str (datetime.datetime.now()),
-            "secret": secret,
-            "wrong": wrong}
-        score_list.append(score_data)
+        print(nombre +" " + "Has acertado... Mago!!! Este es tu numero " + str(secret).format(nombre, secret))
+        print("{0} Has acertado eres un Mago!!! Este es tu numero {1}".format(nombre, secret))
+        print("Numero de intentos: " + str(attempts))
+
+        score_list.append({"usuario": nombre, "intentos": attempts, "fecha": str (datetime.datetime.now()), "secret": secret, "errores": wrong})
+        
         with open("score_list.txt", "w") as score_file:
             score_file.write(json.dumps(score_list)) #json como lee lista Python - lee en formato lista
         break
     elif guess > secret:
-        print("Your guess is not correct... try something smaller")
+        print("Tu numero es incorrecto... intenta uno mas pequeño")
     elif guess < secret:
-        print("Your guess is not correct... try something bigger")
+        print("Tu numero es incorrecto... intenta uno mas grande")
     wrong.append(guess)
