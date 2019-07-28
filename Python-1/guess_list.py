@@ -2,12 +2,12 @@
 import random
 import json
 import datetime
-import functions as f
 
 
 with open("score_list.txt", "r") as score_file:
     score_list = json.loads(score_file.read())#json como lee lista Python - lee en formato lista
-    print("Top" + str(score_list))
+    for i in score_list:
+        print(i)
     print("Top score (attempts): " + str(score_list[:5])) #[ 5 ] cantidad de numeros que mostrara
     print("Top score (attempts): {0}".format(score_list[:1]))  # [ 5 ] cantidad de numeros que mostrara
     #for score_dict in score_list:
@@ -30,7 +30,6 @@ while True:
         print(nombre +" " + "Has acertado... Mago!!! Este es tu numero " + str(secret).format(nombre, secret))
         print("{0} Has acertado eres un Mago!!! Este es tu numero {1}".format(nombre, secret))
         print("Numero de intentos: " + str(attempts))
-        f.hello()
 
         score_list.append({"usuario": nombre, "attempts": attempts, "fecha": str (datetime.datetime.now()), "secret": secret, "errores": wrong})
 
