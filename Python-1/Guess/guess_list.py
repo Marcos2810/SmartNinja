@@ -4,17 +4,22 @@ import json
 import datetime
 import mimodulo.func_guess_list as f
 
+top3 = f.get_score_list()
 
+for t in top3:
+    print(t)
+
+"""
 with open("score_list.txt", "r") as score_file:
     score_list = json.loads(score_file.read())#json como lee lista Python - lee en formato lista
-    f.get_top_scores()
-    f.hello()
+
+"""
 
 secret = random.randint(1, 30)
 attempts = 0
 nombre = input("Introduce tu nombre: ")
 wrong = []
-score_list = get_score_list()
+score_list = f.get_score_list()
 while True:
     try:# capturar errores / try - except
         guess = int(input("Introduce un numero entre 0 y 30: "))
