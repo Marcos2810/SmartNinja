@@ -2,18 +2,16 @@
 import random
 import json
 import datetime
-import func_guess_list as f
+import mimodulo.func_guess_list as f
 
 
 with open("score_list.txt", "r") as score_file:
     score_list = json.loads(score_file.read())#json como lee lista Python - lee en formato lista
-
-    for i in score_list:
+    f.get_top_scores()
+    for i in score_list[:3]:
         print(i)
     print("Top score (attempts): " + str(score_list[:5])) #[ 5 ] cantidad de numeros que mostrara
-    print("Top score (attempts): {0}".format(score_list[:1]))  # [ 5 ] cantidad de numeros que mostrara
-    #for score_dict in score_list:
-    #   print(str(score_dict["attempts"])+" attempts, date " + score_dict.get("date"))
+    print("Top score (attempts): {0}".format(score_list[:2]))  # [ 5 ] cantidad de numeros que mostrara
 
 secret = random.randint(1, 30)
 attempts = 0

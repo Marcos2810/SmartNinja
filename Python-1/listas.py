@@ -23,5 +23,5 @@ another_list.sort()
 print(another_list)
 
 mixed_list = [22, "elon", True, "SmartNinja", 3.14, 28]
-print(mixed_list)
+print(mixed_list[:1])
 
