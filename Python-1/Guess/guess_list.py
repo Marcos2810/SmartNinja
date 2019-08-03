@@ -3,11 +3,17 @@ import random
 import json
 import datetime
 import mimodulo.func_guess_list as f
-
+"""
 top3 = f.get_score_list()
 
 for t in top3:
-    print(t)
+    print(t)"""
+with open("score_list.txt", "r") as score_file:
+    score_list = json.loads(score_file.read())
+    for score in score_list:
+        print(score)
+    print("Top scores: " + str(score_list[:5]))
+
 
 """
 with open("score_list.txt", "r") as score_file:

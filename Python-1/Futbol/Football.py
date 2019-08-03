@@ -15,7 +15,7 @@ with open("foot.txt", "r") as player_foot:
     print(player_list)
 
 print("tu jugador")
-
+jugadores=[]
 name = input("Nombre: ")
 lastname = input("Apellido: ")
 height = float (input("Altura: "))
@@ -27,8 +27,9 @@ r_cards=int(input("Tarjetas rojas: "))
 new_player = FootballPlayer(first_name=name, last_name=lastname, height_cm=float(height), weight_kg=float(weight),
                             goals=int(goals), yellow_cards=int(y_cards), red_cards=int(r_cards))
 
-jugadores = (new_player.__dict__)
 
-with open("foot.txt", "w") as player_foot:
-    player_foot.write(json.dumps(jugadores))
+
+with open("foot.txt", "a") as player_foot:
+    player_foot.write(json.dumps(new_player.__dict__))
+    jugadores = (new_player.__dict__)
     print(jugadores)

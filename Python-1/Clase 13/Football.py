@@ -29,6 +29,6 @@ new_player = FootballPlayer(first_name=name, last_name=lastname, height_cm=float
 
 jugadores = (new_player.__dict__)
 
-with open("foot.txt", "w") as player_foot:
+with open("foot.txt", "a") as player_foot:
     player_foot.write(json.dumps(jugadores))
     print(jugadores)
