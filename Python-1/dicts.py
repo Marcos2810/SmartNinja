@@ -13,7 +13,7 @@ box = {"height": 20, "width": 45, "length": 30}
 box ["cuadrados"] = 20
 box ["juegos"] = 20
 
-print(box[:3])
+print(box[:2])
 print(box["height"])
 print("{1}, {0}" .format(box["height"], box["width"]))
 print(box.get("height"))

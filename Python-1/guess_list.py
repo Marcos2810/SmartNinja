@@ -2,7 +2,7 @@
 import random
 import json
 import datetime
-from operator import itemgetter
+import func_guess_list as f
 
 
 with open("score_list.txt", "r") as score_file:
@@ -14,7 +14,6 @@ with open("score_list.txt", "r") as score_file:
     print("Top score (attempts): {0}".format(score_list[:1]))  # [ 5 ] cantidad de numeros que mostrara
     #for score_dict in score_list:
     #   print(str(score_dict["attempts"])+" attempts, date " + score_dict.get("date"))
-
 
 secret = random.randint(1, 30)
 attempts = 0
