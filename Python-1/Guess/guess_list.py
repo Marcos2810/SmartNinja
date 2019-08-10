@@ -14,7 +14,6 @@ with open("score_list.txt", "r") as score_file:
         print(score)
     print("Top scores: " + str(score_list[:5]))
 
-
 """
 with open("score_list.txt", "r") as score_file:
     score_list = json.loads(score_file.read())#json como lee lista Python - lee en formato lista
