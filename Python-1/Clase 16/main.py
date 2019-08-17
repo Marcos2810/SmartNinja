@@ -12,6 +12,7 @@ def index():
 def login():
     name = request.form.get("user-name")
     email = request.form.get("user-email")
+    password = request.form.get
 
     # create a User object
     user = User(name=name, email=email)
