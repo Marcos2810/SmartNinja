@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+*.db
+*.json
+.idea
+tinydb/
+database/
+secrets.py
+.pytest_cache
+.sqlite
